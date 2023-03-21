@@ -11,7 +11,7 @@ const home = require("./pages/api/home");
 app.use(express.json());
 
 // Routes
-app.use("/home", home);
+app.use("/api", home);
 
 app.use(cors());
 app.use(bodyParser.json());

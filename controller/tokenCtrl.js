@@ -1,7 +1,7 @@
 const zego = require("../lib/zegoServerAssistant");
 const tokenCtrl = {
   token: async (req, res, next) => {
-    const appId = process.env.appId;
+    const appId = parseInt(process.env.appId);
     const userId = req.params.userId;
     const secret = process.env.secret;
 
