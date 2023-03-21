@@ -20,5 +20,4 @@ app.use(bodyParser.json());
 // connection
 app.listen(port, () => {
   console.log(`Server running in : ${port}`);
-  console.log(process.env.appId);
 });
