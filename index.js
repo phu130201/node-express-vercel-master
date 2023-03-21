@@ -6,7 +6,6 @@ const app = express();
 const port = 5000;
 const bodyParser = require("body-parser");
 const home = require("./pages/api/home");
-const fs = require("fs");
 
 // Middlewares
 app.use(express.json());
