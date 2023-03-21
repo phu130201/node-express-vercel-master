@@ -6,14 +6,13 @@ const app = express();
 const port = 5000;
 const bodyParser = require("body-parser");
 const home = require("./pages/api/home");
-
+app.use(cors());
 // Middlewares
 app.use(express.json());
 
 // Routes
 app.use("/api", home);
 
-app.use(cors());
 app.use(bodyParser.json());
 
 // connection
