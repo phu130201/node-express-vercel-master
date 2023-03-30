@@ -5,7 +5,7 @@ const tokenCtrl = {
     const userId = req.params.userId;
     const secret = process.env.secret;
 
-    const effectiveTimeInSeconds = 2 * 60;
+    const effectiveTimeInSeconds = 7200;
 
     const payloadObject = {
       room_id: userId,
